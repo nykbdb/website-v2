@@ -30,15 +30,15 @@ any static web host.
    every page's `<title>`, header, footer, and copy — find/replace it with
    your real company name across all `.html` files.
 
-2. **Wire up the forms (Formspree).** Each form (`ambassadors.html`,
-   `clients.html`, `investors.html`, `contact.html`) currently points to
-   `https://formspree.io/f/YOUR_FORM_ID`, a placeholder. To receive real
-   submissions:
-   - Create a free account at [formspree.io](https://formspree.io)
-   - Create a form for each inquiry type (application, booking, investor,
-     contact) so submissions land in separate inboxes
-   - Replace `YOUR_FORM_ID` in each form's `action=""` attribute with your
-     real endpoint
+2. **Formspree is connected.** All four forms (`ambassadors.html`,
+   `clients.html`, `investors.html`, `contact.html`) post to the same
+   Formspree endpoint (`https://formspree.io/f/mqpkqqjj`). Each submission
+   carries a hidden `form_type` field ("Ambassador Application", "Client
+   Booking Inquiry", "Investor Inquiry", or "General Contact") so you can
+   tell them apart in the Formspree dashboard/CSV export even though they
+   share one inbox. If you later want separate inboxes per form, create
+   additional forms at [formspree.io](https://formspree.io) and update the
+   relevant `action=""` attribute.
 
 3. **Swap in real photography.** The dark gradient boxes labeled
    "Event & Talent Photography" etc. (`.image-frame` divs) are placeholders
