@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | LUXE Ambassadors</title>
+<meta name="description" content="Get in touch with LUXE Ambassadors for general questions, partnership opportunities, or press inquiries." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="mark">LA</span> LUXE Ambassadors</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ambassadors.html">Become an Ambassador</a></li>
+        <li><a href="clients.html">For Clients</a></li>
+        <li><a href="investors.html">Investors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="clients.html" class="btn btn-outline">Book Talent</a>
+      <a href="ambassadors.html#apply" class="btn btn-gold">Apply Now</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Get In Touch</div>
+    <h1>We'd love to hear from you.</h1>
+    <p>General questions, partnerships, press, or anything else — send us a message and we'll get back to you within one business day.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <div class="eyebrow">Contact Details</div>
+        <h2>Reach out directly.</h2>
+        <p>Looking to apply, book talent, or inquire about investing? Those forms will route you straight to the right team — but for anything else, use the form here or reach us directly.</p>
+
+        <div class="grid grid-2" style="margin-top:32px;">
+          <div>
+            <h4 style="margin-bottom:6px;">Email</h4>
+            <p><a href="mailto:hello@luxeambassadors.com" style="color:var(--turquoise-dark); font-weight:600;">hello@luxeambassadors.com</a></p>
+          </div>
+          <div>
+            <h4 style="margin-bottom:6px;">Phone</h4>
+            <p><a href="tel:+17025550123" style="color:var(--turquoise-dark); font-weight:600;">(702) 555-0123</a></p>
+          </div>
+          <div>
+            <h4 style="margin-bottom:6px;">Location</h4>
+            <p>Las Vegas, Nevada</p>
+          </div>
+          <div>
+            <h4 style="margin-bottom:6px;">Response Time</h4>
+            <p>Within 1 business day</p>
+          </div>
+        </div>
+
+        <div style="margin-top:32px; display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="ambassadors.html#apply" class="btn btn-outline-dark">Apply as Ambassador</a>
+          <a href="clients.html#inquiry" class="btn btn-outline-dark">Book Talent</a>
+          <a href="investors.html#inquiry" class="btn btn-outline-dark">Investor Inquiry</a>
+        </div>
+      </div>
+
+      <div class="form-panel">
+        <!--
+          FORM SETUP: Replace YOUR_FORM_ID below with your real Formspree endpoint.
+          Create a separate Formspree form for general contact to keep submissions organized.
+        -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-ajax-form>
+          <input type="hidden" name="form_type" value="General Contact" />
+
+          <div class="field">
+            <label for="ct-name">Full Name</label>
+            <input type="text" id="ct-name" name="name" required />
+          </div>
+
+          <div class="field">
+            <label for="ct-email">Email</label>
+            <input type="email" id="ct-email" name="email" required />
+          </div>
+
+          <div class="field">
+            <label for="ct-subject">Subject</label>
+            <select id="ct-subject" name="subject">
+              <option value="">Select one</option>
+              <option>General Question</option>
+              <option>Partnership</option>
+              <option>Press / Media</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="ct-message">Message</label>
+            <textarea id="ct-message" name="message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <div class="form-status" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="margin-bottom:14px; display:inline-flex;"><span class="mark">LA</span> LUXE Ambassadors</a>
+        <p>A Las Vegas brand ambassador agency built on real event experience, curated talent, and genuine care for every client and ambassador we work with.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="investors.html">Investors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="ambassadors.html#apply">Apply as Ambassador</a></li>
+          <li><a href="clients.html#inquiry">Book Talent</a></li>
+          <li><a href="investors.html#inquiry">Investor Inquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@luxeambassadors.com">hello@luxeambassadors.com</a></li>
+          <li><a href="tel:+17025550123">(702) 555-0123</a></li>
+          <li>Las Vegas, NV</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span class="current-year"></span> LUXE Ambassadors. All rights reserved.</span>
+      <span>Placeholder brand name &mdash; update before launch.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
